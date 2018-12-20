@@ -1,0 +1,33 @@
+@import '../style/config';
+
+div.sign-in {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   .providers {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      a {
+         margin: 10px;
+         font-weight: bold;
+         text-align: center;
+         text-decoration: none;
+         min-width: 125px;
+         background-color: #fff;
+         cursor: pointer;
+         box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.4);
+         border: 1px solid #fff;
+
+         .svg {
+            padding: 1rem;
+         }
+
+         &:hover {
+            color: $navColor;
+         }
+      }
+   }
+}

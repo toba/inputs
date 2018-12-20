@@ -1,0 +1,32 @@
+@import '../style/config';
+
+button {
+   font-size: $formFontSize;
+   font-weight: bold;
+   cursor: pointer;
+   color: desaturate(lighten($navColor, 40%), 15%);
+   background-color: $navColor;
+   padding: 5px 15px 7px 14px;
+   border: none;
+   border-radius: 5px;
+   box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.3);
+   text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
+
+   &:hover {
+      box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.5);
+      color: #fff;
+   }
+
+   &:active {
+      box-shadow: none;
+   }
+
+   &:disabled {
+      cursor: not-allowed;
+      box-shadow: none;
+      text-shadow: none;
+      color: $lightColor;
+      background-color: $darkColor;
+      opacity: 0.3;
+   }
+}

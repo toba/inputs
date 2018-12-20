@@ -1,0 +1,40 @@
+@import 'config';
+@import 'brand';
+
+body {
+   color: $textColor;
+   font-family: $sanSerifFont;
+   // https://css-tricks.com/fun-viewport-units/
+   font-size: calc(16px + 0.5vw);
+   background-color: $backgroundColor;
+}
+
+a {
+   color: $linkColor;
+   text-decoration: none;
+   cursor: pointer;
+
+   &:hover {
+      text-decoration: underline;
+      text-decoration-skip: ink;
+   }
+}
+
+svg {
+   fill: currentColor;
+}
+
+h1,
+h2,
+h3,
+h4 {
+   font-family: $sanSerifFont;
+   letter-spacing: -1px;
+}
+
+input,
+button,
+select {
+   font-size: $formFontSize;
+   font-family: $sanSerifFont;
+}

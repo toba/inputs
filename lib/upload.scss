@@ -1,0 +1,59 @@
+@import '../style/config';
+
+.file-upload {
+   text-align: center;
+   padding: 1em;
+   background-color: #fff;
+   outline: 2px dashed $navColor;
+   outline-offset: -10px;
+   transition: outline-offset 0.15s ease-in-out, background-color 0.15s linear;
+
+   form {
+      text-align: center;
+
+      input[type='file'] {
+         display: absolute;
+         opacity: 0;
+         z-index: -1;
+         width: 1px;
+         height: 1px;
+         overflow: hidden;
+      }
+      label {
+         width: auto;
+         margin: 0;
+         display: inline-block;
+         cursor: pointer;
+         font-weight: bold;
+         color: $linkColor;
+         &:hover {
+            text-decoration: underline;
+         }
+      }
+      .material-icons {
+         color: $darkerColor;
+         font-size: 4em;
+         vertical-align: middle;
+      }
+   }
+
+   &.active {
+      color: #fff;
+      outline-color: #fff;
+      background-color: $navColor;
+      outline-offset: -15px;
+
+      form {
+         .material-icons,
+         label {
+            color: #fff;
+         }
+      }
+   }
+
+   .uploading,
+   .success,
+   .error {
+      display: none;
+   }
+}

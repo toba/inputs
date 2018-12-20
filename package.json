@@ -1,0 +1,45 @@
+{
+   "name": "@toba/inputs",
+   "version": "1.0.0",
+   "description": "toba inputs module",
+   "private": false,
+   "author": {
+      "name": "Jason Abbott",
+      "url": "http://github.com/toba"
+   },
+   "license": "MIT",
+   "publishConfig": {
+      "access": "public"
+   },
+   "main": "dist/index.js",
+   "types:": "dist/index.d.ts",
+   "files": [
+      "dist/**/*"
+   ],
+   "scripts": {
+      "prepublishOnly": "./node_modules/.bin/tsc",
+      "test": "jest --coverage"
+   },
+   "dependencies": {
+      "@toba/tools": "^4.2.5",
+      "react": "16.7.0",
+      "react-dom": "16.7.0"
+   },
+   "devDependencies": {
+      "@toba/build": "^2.0.0",
+      "@toba/test": "^2.0.0",
+      "@types/react": "^16.7.17",
+      "@types/react-dom": "^16.0.11"
+   },
+   "repository": {
+      "type": "git",
+      "url": "https://github.com/toba/inputs"
+   },
+   "bugs": {
+      "url": "https://github.com/toba/inputs/issues"
+   },
+   "prettier": {
+      "singleQuote": true,
+      "tabWidth": 3
+   }
+}

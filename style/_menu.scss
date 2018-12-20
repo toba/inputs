@@ -1,0 +1,130 @@
+@import 'config';
+@import 'mixins';
+
+$imgSize: 75px;
+
+i.signed-out,
+#account-menu {
+   position: absolute;
+   top: $space;
+   right: $space;
+}
+
+i.signed-out {
+   font-size: $imgSize;
+   color: #ddd;
+}
+
+#account-menu {
+   width: 200px;
+   height: 150px;
+
+   img {
+      position: absolute;
+      right: 0;
+      top: 0;
+      border-radius: 50%;
+      width: $imgSize;
+      height: $imgSize;
+      cursor: pointer;
+      z-index: 100;
+
+      &:hover {
+         box-shadow: 10px;
+      }
+   }
+
+   nav {
+      position: absolute;
+      margin: 0;
+      top: $imgSize / 3;
+      right: $imgSize / 3;
+      width: 100%;
+      z-index: 75;
+      border: 1px solid #000;
+      padding: 4px 20px 4px 4px;
+      text-align: center;
+      background-color: #eee;
+
+      h4 {
+         margin: 0;
+         padding: 0;
+      }
+
+      button {
+         margin: $space;
+      }
+   }
+}
+
+ul.menu,
+ul.sub-menu {
+   list-style: none;
+   font-family: $narrowFont;
+   margin: 0;
+   padding: 0 0 2px 0;
+   font-size: 24px;
+
+   li {
+      cursor: pointer;
+   }
+}
+
+ul.menu {
+   margin-top: 25px;
+
+   @include keyframes(grow) {
+      from {
+         width: 0;
+      }
+      to {
+         width: 100%;
+      }
+   }
+
+   li {
+      position: relative;
+      text-transform: uppercase;
+      display: inline-block;
+      letter-spacing: -1px;
+      margin-left: 20px;
+      margin-right: 10px;
+      border-bottom: 3px solid $backgroundColor;
+
+      .fa {
+         font-size: 14px;
+         vertical-align: middle;
+         margin-bottom: 3px;
+         padding: 0 0 0 6px;
+         transition: opacity 0.5s ease;
+         opacity: 0.2;
+      }
+
+      &.gaiapro {
+         color: $trimColor;
+      }
+
+      div.underline {
+         background-color: $trimColor;
+         margin: 0 auto;
+         height: 3px;
+         width: 0;
+      }
+
+      &:hover {
+         div.underline {
+            animation-name: grow;
+            animation-duration: 0.2s;
+            animation-iteration-count: 1;
+            width: 100%;
+         }
+         .fa {
+            opacity: 1;
+         }
+      }
+   }
+}
+
+// ul.sub-menu {
+
+// }
