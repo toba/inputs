@@ -41,5 +41,10 @@
    "prettier": {
       "singleQuote": true,
       "tabWidth": 3
+   },
+   "stylelint": {
+      "plugins": [
+         "@toba/build/style"
+      ]
    }
 }
