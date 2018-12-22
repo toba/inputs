@@ -21,6 +21,7 @@
       "test": "jest --coverage"
    },
    "dependencies": {
+      "@toba/style": "^1.0.0",
       "@toba/tools": "^4.2.5",
       "react": "16.7.0",
       "react-dom": "16.7.0"
