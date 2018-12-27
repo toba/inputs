@@ -1,7 +1,7 @@
 {
    "name": "@toba/inputs",
    "version": "1.0.0",
-   "description": "toba inputs module",
+   "description": "Toba inputs module",
    "private": false,
    "author": {
       "name": "Jason Abbott",
@@ -11,8 +11,7 @@
    "publishConfig": {
       "access": "public"
    },
-   "main": "dist/index.js",
-   "types:": "dist/index.d.ts",
+   "main": "lib/index.ts",
    "files": [
       "dist/**/*"
    ],
@@ -27,7 +26,8 @@
       "react-dom": "16.7.0"
    },
    "devDependencies": {
-      "@toba/build": "^2.0.0",
+      "@toba/build": "^3.0.0",
+      "@toba/develop": "^2.0.0",
       "@toba/test": "^2.0.0",
       "@types/react": "^16.7.17",
       "@types/react-dom": "^16.0.11"
