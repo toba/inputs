@@ -3,7 +3,7 @@
 ![Code style](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)
 [![Dependencies](https://img.shields.io/david/toba/inputs.svg)](https://david-dm.org/toba/inputs)
 [![DevDependencies](https://img.shields.io/david/dev/toba/inputs.svg)](https://david-dm.org/toba/inputs#info=devDependencies&view=list)
-[![codecov](https://codecov.io/gh/toba/inputs/branch/master/graph/badge.svg)](https://codecov.io/gh/toba/inputs)
+[![Test Coverage](https://codecov.io/gh/toba/inputs/branch/master/graph/badge.svg)](https://codecov.io/gh/toba/inputs)
 
 <img src='https://toba.github.io/about/images/logo-colored.svg' width="100" align="right"/>
 
@@ -12,3 +12,10 @@
 ```
 yarn add @toba/inputs --dev
 ```
+
+## License
+
+Copyright &copy; 2019 Jason Abbott
+
+This software is licensed under the MIT license. See the [LICENSE](./LICENSE) file
+accompanying this software for terms of use.

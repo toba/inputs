@@ -11,12 +11,17 @@
    "publishConfig": {
       "access": "public"
    },
-   "main": "lib/index.ts",
+   "main": "dist/index.js",
+   "types": "dist/index.d.ts",
    "files": [
-      "dist/**/*"
+      "*.scss",
+      "dist"
+   ],
+   "sideEffects": [
+      "*.scss"
    ],
    "scripts": {
-      "prepublishOnly": "./node_modules/.bin/tsc",
+      "prepublishOnly": "./node_modules/.bin/tsc --project tsconfig.build.json",
       "test": "jest --coverage"
    },
    "dependencies": {
@@ -28,6 +33,7 @@
    "devDependencies": {
       "@toba/build": "^4.0.0",
       "@toba/develop": "^4.0.0",
+      "@toba/example": "^1.0.0",
       "@toba/test": "^3.0.0",
       "@types/react": "^16.7.17",
       "@types/react-dom": "^16.0.11"
@@ -35,17 +41,5 @@
    "repository": {
       "type": "git",
       "url": "https://github.com/toba/inputs"
-   },
-   "bugs": {
-      "url": "https://github.com/toba/inputs/issues"
-   },
-   "prettier": {
-      "singleQuote": true,
-      "tabWidth": 3
-   },
-   "stylelint": {
-      "plugins": [
-         "@toba/build/style"
-      ]
    }
 }
