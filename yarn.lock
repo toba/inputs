@@ -318,7 +318,7 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.0.0"
 
-"@babel/plugin-syntax-dynamic-import@^7.0.0":
+"@babel/plugin-syntax-dynamic-import@^7.0.0", "@babel/plugin-syntax-dynamic-import@^7.2.0":
   version "7.2.0"
   resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-dynamic-import/-/plugin-syntax-dynamic-import-7.2.0.tgz#69c159ffaf4998122161ad8ebc5e6d1f55df8612"
   integrity sha512-mVxuJ0YroI/h/tbFTPGZR8cv6ai+STMKNBq0f8hFxsxWjl94qqhsb+wXbpNMDPU3cfR1TIsVFzU3nXyZMqyK4w==
@@ -880,15 +880,18 @@
   integrity sha512-UhKfD+Qv56qP2hlfbwxh4wSi/YnlFwFEGs33I75AmgUfUmgLOrg9bQCploTIntND/bytWqod1L+BsTYA82m+xA==
 
 "@toba/test@^3.0.0":
-  version "3.5.3"
-  resolved "https://registry.yarnpkg.com/@toba/test/-/test-3.5.3.tgz#c172280660c891e18acb79ca37df47d0a324f828"
-  integrity sha512-za6XYLe2Vh+6Rm3oltrMU2WRm3TUZt6iQ2och4Roxv6goPgEVGUZbxkqGo5b0JhMKOfyEk8pf9s/EADXEIbZWw==
+  version "3.7.1"
+  resolved "https://registry.yarnpkg.com/@toba/test/-/test-3.7.1.tgz#513ae0cedbe4c0070b121af46ac69a45e414675f"
+  integrity sha512-o5QjrpHz81tsM6MbNuUMgrH0pHJbFHuLqFIPXgVi3+y+EkxrUYaQsyNGjCb3U05qaHgpjrAwisQcMM8VnPO7ag==
   dependencies:
+    "@babel/core" "^7.2.2"
     "@babel/plugin-proposal-class-properties" "^7.3.0"
+    "@babel/plugin-syntax-dynamic-import" "^7.2.0"
     "@babel/preset-env" "^7.3.1"
     "@babel/preset-typescript" "^7.1.0"
     "@toba/tools" "^6.0.0"
     "@types/jest" "^23.3.0"
+    babel-plugin-dynamic-import-node "^2.2.0"
     fake-indexeddb "^2.0.4"
     jest "^24.0.0"
     jest-date-mock "^1.0.6"
@@ -1564,6 +1567,13 @@ babel-plugin-check-es2015-constants@^6.5.0:
   integrity sha1-NRV7EBQm/S/9PaP3XH0ekYNbv4o=
   dependencies:
     babel-runtime "^6.22.0"
+
+babel-plugin-dynamic-import-node@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-dynamic-import-node/-/babel-plugin-dynamic-import-node-2.2.0.tgz#c0adfb07d95f4a4495e9aaac6ec386c4d7c2524e"
+  integrity sha512-fP899ELUnTaBcIzmrW7nniyqqdYWrWuJUyPWHxFa/c7r7hS6KC8FscNfLlBNIoPSc55kYMGEEKjPjJGCLbE1qA==
+  dependencies:
+    object.assign "^4.1.0"
 
 babel-plugin-istanbul@^5.1.0:
   version "5.1.0"
@@ -6574,7 +6584,7 @@ object-copy@^0.1.0:
     define-property "^0.2.5"
     kind-of "^3.0.3"
 
-object-keys@^1.0.12:
+object-keys@^1.0.11, object-keys@^1.0.12:
   version "1.0.12"
   resolved "https://registry.yarnpkg.com/object-keys/-/object-keys-1.0.12.tgz#09c53855377575310cca62f55bb334abff7b3ed2"
   integrity sha512-FTMyFUm2wBcGHnH2eXmz7tC6IwlqQZ6mVZ+6dm6vZ4IQIHjs6FdNsQBuKGPuUUUY6NfJw2PshC08Tn6LzLDOag==
@@ -6585,6 +6595,16 @@ object-visit@^1.0.0:
   integrity sha1-95xEk68MU3e1n+OdOV5BBC3QRbs=
   dependencies:
     isobject "^3.0.0"
+
+object.assign@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/object.assign/-/object.assign-4.1.0.tgz#968bf1100d7956bb3ca086f006f846b3bc4008da"
+  integrity sha512-exHJeq6kBKj58mqGyTQ9DFvrZC/eR6OwxzoM9YRoGBqrXYonaFyGiFMuc9VZrXf7DarreEwMpurG3dd+CNyW5w==
+  dependencies:
+    define-properties "^1.1.2"
+    function-bind "^1.1.1"
+    has-symbols "^1.0.0"
+    object-keys "^1.0.11"
 
 object.getownpropertydescriptors@^2.0.3:
   version "2.0.3"
