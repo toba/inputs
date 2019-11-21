@@ -25,15 +25,15 @@
       "test": "jest --coverage"
    },
    "dependencies": {
-      "@toba/style": "^1.0.0",
-      "@toba/tools": "^6.0.0",
+      "@toba/style": "^1.15.12",
+      "@toba/tools": "^6.10.0",
       "react": "16.7.0",
       "react-dom": "16.7.0"
    },
    "devDependencies": {
-      "@toba/build": "^4.0.0",
+      "@toba/build": "^4.18.0",
       "@toba/example": "^1.0.0",
-      "@toba/test": "^3.0.0"
+      "@toba/test": "^3.8.5"
    },
    "repository": {
       "type": "git",
